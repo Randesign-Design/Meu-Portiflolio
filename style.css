@@ -1,0 +1,138 @@
+/* Reset básico e estilo do corpo */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo para fora da seção */
+    overflow-x: hidden; /* Previne scroll horizontal */
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;}
+
+header {
+    background: #a3242e;
+    color: #f2f0ef;
+    padding: 1rem 0;
+
+  }
+
+  header .container {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+  }
+  h2 {
+    color: #a3242e;
+text-align: center;
+    margin-bottom: 1rem;
+    font-size: 25;
+  }
+
+
+/* Seção de tela cheia */
+.fullscreen-section {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    width: 100vw;  /* Ocupa 100% da largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necessário para posicionar os controles */
+    background-color: #ffffff; /* Cor de fundo da seção */
+    overflow: hidden; /* Esconde o que sair dos limites da seção */
+}
+
+/* Container do carrossel */
+.carousel-container {
+    position: relative;
+    width:  100%; /* Largura do slide (ajuste conforme preferir) */
+    height: 100%; /* Altura do slide (ajuste conforme preferir) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de cada slide */  
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.8s ease-in-out; /* Animação suave de fade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slide ativo (o que está visível) */
+.carousel-slide.active {
+    opacity: 1; /* Fica visível */
+}
+
+/* Estilo da imagem dentro do slide */
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a imagem caiba sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave (opcional) */
+}
+
+/* Controles de navegação (setas) */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 2rem; /* Espaçamento das bordas */
+    box-sizing: border-box;
+    pointer-events: none; /* Permite clicar através da área dos controles */
+}
+
+.arrow-btn {
+    pointer-events: all; /* Reativa o clique apenas nos botões */
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    user-select: none; /* Impede que o texto da seta seja selecionado */
+}
+
+.arrow-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.botão-de-email {
+    background-color: #f2f0ef; /* Cor de fundo */
+    color: #000;;
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+  
+  }
+
+.botão-de-email:hover {
+    background: #771c23;
+    color: #f2f0ef; /* Cor ao passar o mouse */
+  }
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #f2f0ef;
+    background-color: #a3242e;
+  }
