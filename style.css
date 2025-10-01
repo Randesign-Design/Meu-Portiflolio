@@ -33,6 +33,39 @@ text-align: center;
   }
 
 
+
+.sobre-mim {
+margin-top: -45px;
+align-items: center;
+ justify-content: center;
+  display: flex;
+  flex-direction: column;
+text-align: center;
+
+}
+
+  .sobre-mim a {
+
+    display: inline-block;
+    margin-top: 0px;
+    padding: 0.5rem 1rem;
+    color: #f2f0ef;
+    background: #a3242e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+
+  }
+
+  .sobre-mim a:hover {
+
+    color: #f2f0ef;
+    background: #771c23;
+
+  }
+
+
 /* Seção de tela cheia */
 .fullscreen-section {
     height: 100vh; /* Ocupa 100% da altura da tela */
@@ -135,4 +168,5 @@ footer {
     padding: 1rem 0;
     color: #f2f0ef;
     background-color: #a3242e;
+
   }
